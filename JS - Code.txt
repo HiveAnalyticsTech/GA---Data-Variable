@@ -1,0 +1,38 @@
+<script>
+var dataLayer  = window.dataLayer || [];
+dataLayer.push({
+  'event': 'transaction',
+  'ecommerce': {
+    'purchase': {
+      'actionField': {
+        'id': 'T12345',        // Transaction ID. Required           
+        'affiliation': 'Online Store',
+        'revenue': '35.43',   // Total transaction value (incl. tax and shipping)
+        'tax':'4.90',
+        'shipping': '5.99',
+        'coupon': 'SUMMER_SALE'
+      },
+	  'products': [{          // List of productFieldObjects.
+        'name': 'وحدة تلفزيون بقاعدة حرف X - W252'
+',  // Name and ID is required.
+        'id': '60abb9727d4b5c1413f6a97c',
+        'price': '1350 ',
+        'category': 'وحدات تلفزيون و كونسول',
+        'variant': 'أبيض',
+        'Material': 'خشب ام دي اف'
+        'quantity': 1,
+        'coupon': ''  // Optional fields may be omitted or set to empty string.
+       },
+       {
+        'name': 'وحدة تلفزيون بقاعدة حرف X - W252',
+        'id': '60abb9727d4b5c1413f6a97c',
+        'price': '1350 ',
+        'category': 'وحدات تلفزيون و كونسول',
+        'variant': 'أبيض',
+        'quantity': 1
+       }] //expand this array if more product exists
+    }
+  }
+});
+
+</script>
